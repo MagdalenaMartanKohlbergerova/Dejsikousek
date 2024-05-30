@@ -1,0 +1,894 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+* {
+   scroll-behavior: smooth;
+}
+
+body {
+   font-family: Arial;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: 'Kaushan Script';
+}
+
+/****** NAVIGATION ******/
+
+menu {
+   display: flex;
+   flex-direction: column;
+}
+
+header menu .logo {
+   display: flex;
+   background-color: #F1B4C4;
+   color: white;
+   justify-content: space-between;
+   align-items: center;
+   padding-inline: 30px;
+}
+
+header menu .logo a {
+   text-decoration: none;
+   color: white;
+}
+
+header menu .logo a .fa-phone {
+   padding-inline-start: 30px;
+   font-size: 25px;
+}
+
+header menu .logo h3 {
+   font-size: 25px;
+   font-weight: bold;
+   letter-spacing: 1px;
+   padding-block: 20px;
+}
+
+header menu .logo a i {
+   font-size: 25px;
+   color: white;
+   padding-inline: 5px;
+}
+
+header menu .logo .social .menu-icon{
+   position: absolute;
+   /* display: flex; */
+   top: 1.3rem;
+    right: 1.5rem;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+    padding-inline-start: 3rem;
+}
+
+header menu .logo a i.fa-facebook:hover{ 
+      color: #FADCE4;
+      transition: all 0.5s;  
+}
+
+header menu .logo a i.fa-instagram:hover {
+      color: #adece9;
+      transition: all 0.5s;
+}
+
+header .container {
+   display: flex;
+   justify-content: space-between;
+   justify-content: center;
+   background-color: #f1b4c49f;
+}
+
+header .container nav {
+   display: flex;
+   align-items: center;
+}
+
+header .container nav ul {
+   list-style: none;
+   display: flex;
+   column-gap: 20px;
+}
+
+header .container nav ul .raspberry{
+   height: 90px;
+   width: 90px;
+   border-radius: 50%;
+   margin-block-start: -3rem;
+   border: 2px solid white;
+}
+
+header .container nav ul .raspberry img{
+   width: 100%;
+   height: 90px;
+   width: 90px;
+   border-radius: 50%;
+   transition: all 2s;
+}
+
+header .container nav ul .raspberry img:hover{
+   transform: rotate(90deg);
+   transition: all 1.2s;
+}
+
+header .container nav ul li a {
+   color: white;
+   text-decoration: none;
+   font-size: 15px;
+   font-weight: bold;
+   letter-spacing: 1px;
+   padding-inline: 30px;
+   line-height: 45px;
+   text-transform: lowercase;
+   transition: all 0.5s;
+}
+
+header .container nav ul li a:hover {
+   color: #F1B4C4;
+   transition: all 0.5s;
+}
+
+
+/****** PODNIK GRO ******/
+
+main .priority{
+   display: flex;
+   width: 1000px;
+   margin: 0 auto;
+   padding-block: 70px;
+   align-items: center;
+   justify-content: space-around;
+}
+
+main .priority h2 {
+   font-size: 40px;
+   color: #f9a4bb;
+   text-shadow: none;
+}
+
+main .priority p {
+   line-height: 24px;
+   margin-block-start: 10px;
+   padding-block-end: 1rem;
+   width: 50vw;
+   align-content: center;
+   flex-wrap: wrap;
+}
+
+main .priority a {
+   background-color: #FBF7F2;
+   color: #f9a4bb;
+   text-decoration: none;
+   font-weight: bold;
+   text-transform: uppercase;
+   transition: all 1s;
+   width: 15vw;
+   padding: 20px;
+   text-align: center;
+}
+
+main .priority a:hover {
+   letter-spacing: 1px;
+   background-color: #f9a4bb;
+   color: white;
+}
+
+/****** CAKE INFO / VOUCHER ******/
+
+.cake-line{
+   background-image: url(../img/poukazy.jpg);
+   height: 350px;
+   background-position: center;
+   background-size: cover;
+}
+
+.container-offer{
+   display: grid;
+   grid-template-columns: repeat(3, minmax(0, 1fr));
+   grid-template-rows: repeat(1, minmax(0, 1fr));
+   height: 300px;
+   column-gap: 5px;
+   padding-block: 5px;
+}
+
+.container-offer .grid-item1{
+   padding-inline: 5rem;
+   padding-block: 5rem;
+   grid-column: 1/3;
+   grid-row: 1/2;
+}
+
+.container-offer .grid-item1 p{
+   line-height: 150%;
+   color: black;
+   padding-block-end: 1rem;
+}
+
+.container-offer .grid-item2{
+   background-image:url(../img/poukazy2.jpg);
+   background-size: cover;
+   background-position: center;
+}
+
+.container-offer .callme a{
+   font-weight: bold;
+   color: #f9a4bb;
+   padding-inline: 6px;
+   text-decoration: none;
+}
+
+/****** CAKE PRIZES ******/
+
+main .cake-offer{
+   display: flex;
+   flex-direction: row-reverse;
+   height: 500px;
+   background-image: url(../img/kremrole.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: right;
+}
+
+main .cake-offer .grid-item1 h2{
+   font-size: 50px;
+   font-weight: bold;
+   padding-block: 20px;
+   text-align: center;
+   color: white;
+   margin-block-end: 10px;
+}
+
+main .cake-offer .grid-item1{
+   background-color: #a9c7c55c;
+   width: 50%;
+   height: 100%;
+   display: flex;
+   justify-content: end;
+   align-items: center;
+   justify-content: center;
+   text-align: left;
+}
+
+main div#cake-prizes.cake-offer .grid-item1 div table{
+   width: 350px;
+}
+
+main .cake-offer .grid-item1 div table tbody tr th{
+   padding-block: 4px;
+   padding-inline-start: 1rem;
+   cursor: pointer;
+   font-weight: bold;
+}
+
+main .cake-offer .grid-item1 div table tbody tr td{
+   padding-inline-end: 1rem;
+   cursor: pointer;
+   display: flex;
+   justify-content: flex-end;
+}
+
+main .cake-offer .grid-item1 div table tbody tr .wedding-cakes{
+   padding-block-start: 1rem;
+}
+
+main .cake-offer .grid-item1 div table tbody tr.offer:hover{
+   background-color: #a9c7c599;
+}
+
+main .cake-offer .grid-item1 div table tbody tr.offer:focus{
+   background-color: #a9c7c599;
+}
+
+.modal{
+   padding: 3em;
+   width: 300px;
+   text-align: left;
+   border: 0;
+}
+
+.grid-item1 dialog#modal.modal h2{
+   font-size: 30px;
+   color: #f9a4bb;
+   margin-block-end: 1rem;
+}
+
+dialog .modal table tbody tr th{
+   padding-block: 4px;
+   padding-inline-start: 1rem;
+   cursor: pointer;
+   font-weight: bold;
+}
+
+dialog#modal.modal table tbody tr th{
+   padding-block: 4px;
+   /* padding-inline-start: 1rem; */
+   padding-inline-end:30px ;
+   cursor: pointer;
+   font-weight: bold;
+}
+
+dialog#modal.modal table tbody tr th.wedding-cakes{
+   font-weight: lighter;
+   padding-block-start: 1rem;
+}
+
+/* button.open-button{
+   background: none;
+   border: none;
+   color:#f9a4bb;
+   font-weight: bold;
+   font-size: 18px;
+   cursor: pointer;
+} */
+
+button.open-button{
+   position: relative;
+	color: #f9a4bb;
+	text-decoration: none;
+	font-size: 1em;
+   /* display: flex; */
+   max-width: 150px;
+   align-content: end;
+   justify-content: right;
+   /* margin-inline-start: 1rem; */
+   background: none;
+   border: none;
+   cursor: pointer;
+   font-weight: bold;
+}
+
+button.open-button:before,
+button.open-button:after {
+	content: '';
+	display: block;
+	position: absolute;
+	height: 2px;
+	top: 50%;
+	background: #f9a4bb;
+	/* border-radius: 4px; */
+	transition: all 0.3s;
+}
+
+button.open-button:after {
+	width: 20%;
+	left: 110%;
+}
+
+button.open-button:hover:before {
+	width: 0%;
+}
+button.open-button:hover:after {
+	width: 50px;
+}
+
+.button.open-button span {
+	position: absolute;
+	display: block;
+	width: 60px;
+	height: 100%;
+	right: -30%;
+	top: 0;
+}
+
+button.close-button{
+   margin-block-start: 3rem;
+   background-color: #FBF7F2;
+   color: #f9a4bb;
+   text-decoration: none;
+   font-weight: bold;
+   text-transform: uppercase;
+   transition: all 1s;
+   /* max-width: 15vw; */
+   min-width: 150px;
+   padding: 20px;
+   text-align: center;
+   border: 0;
+   cursor: pointer;
+}
+
+button.close-button:hover{
+   letter-spacing: 1px;
+   background-color: #f9a4bb;
+   color: white;
+}
+
+.modal::backdrop {
+   background: rgb(0 0 0 / 0.4);
+ }
+
+/***** COFFEE OFFER  *****/
+
+main .coffee-offer{
+   display: flex;
+   flex-direction: row;
+   height: 500px; 
+   background-image: url(../img/person-serving-cup-coffee-with-metal-jug.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
+   background-position: center;
+   position: relative;
+}
+
+main .coffee-offer a img{
+   position: absolute;
+   left: 15%;
+   top: 15%;
+   width: 150px;
+}
+
+/* main .coffee-offer .grid-item2{
+   background-color: #e9c69c7c;
+   display: flex;
+   flex-direction: column;
+   align-items: top;
+   justify-content: center;
+   width: 50%;
+
+} */
+
+.coffee-article{
+   height: 400px;
+   /* display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center; */
+}
+
+.coffee-article article{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding-block-start: 4rem;
+   text-align: center;
+   position: relative;
+}
+
+.coffee-article article h2{
+   font-size: 50px;
+   padding-block-end: 1rem ;
+   color: #f9a4bb;
+}
+
+/* .coffee-article article a{
+   padding-block-start: 1rem;
+   width: 400px;
+} */
+
+.coffee-article article img{
+   padding-block-start: 1rem;
+   margin-inline-end: -10rem;
+}
+
+main .coffee-offer .grid-item2 article{
+   width: 420px;
+   margin: 0 auto;
+}
+
+main .coffee-offer .grid-item2 h2{
+   font-size: 50px;
+   padding-block: 20px;
+   text-align: left;
+   color: black;
+   text-align: center;
+}
+
+main .coffee-offer .grid-item2 p{
+   line-height: 150%;
+   color: white;
+   font-weight: 600;
+   text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.587);
+   padding-block-end: 1rem;
+   text-align: center;
+}
+
+main .coffee-offer .grid-item2 a{
+   display: flex;
+   align-items: end;
+   justify-content: end;
+}
+
+main .coffee-offer .grid-item2 div{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-block-start: 3rem;
+}
+
+main .coffee-offer .grid-item2 div table{
+   width: 450px;
+   text-align: left;
+   margin: 0 auto;
+}
+
+main .coffee-offer .grid-item2 div table tbody tr th{
+   padding-block: 4px;
+   padding-inline-start: 1rem;
+   cursor: pointer;
+   font-weight: bold;
+}
+
+main .coffee-offer .grid-item2 div table tbody tr td{
+   padding-inline-start: 1rem;
+   padding-inline-end: 1rem;
+}
+
+main .coffee-offer .grid-item2 div table tr:hover{
+   background-color: #ffe2bf97;
+}
+
+main .coffee-offer .grid-item2 div table tr:focus{
+   background-color: #ffe2bf97;
+}
+
+/***** LIMO OFFER / PRIZES *****/
+
+main .limo-offer{
+   display: flex;
+   height: 300px;
+   background-image: url(../img/limonada1.jpg);
+   background-position: center;
+   background-size: cover;
+   background-position: center;
+}
+
+main .limo-offer .grid-item1{
+   width: 50%;
+}
+
+main .limo-offer .grid-item2{
+   background-color: #a9c7c55c;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+}
+
+main .limo-offer .grid-item2 h2{
+   font-size: 50px;
+   padding-block: 20px;
+   text-align: center;
+   color: white;
+   margin-block-end: 10px;
+}
+
+main .limo-offer .grid-item2 div table{
+   width: 300px;
+   text-align: left;
+   margin: 0 auto;
+}
+
+main .limo-offer .grid-item2 div table tbody tr th{
+   padding-block: 4px;
+   padding-inline-end: 9rem;
+   padding-inline-start: 1rem;
+   cursor: pointer;
+   font-weight: bold;
+}
+
+main .limo-offer .grid-item2 div table tbody tr td{
+   padding-block-start: 1rem;
+   padding-inline-start: 1rem;
+   cursor: pointer;
+}
+
+main .limo-offer .grid-item2 div table tbody tr{
+   padding-block-start: 1rem;
+}
+
+main .limo-offer .grid-item2 div table tbody tr.limo:hover{
+   background-color: rgba(0, 128, 0, 0.308);
+}
+
+main .limo-offer .grid-item2 div table tbody tr.limo:focus{
+   background-color: rgba(0, 128, 0, 0.308);
+}
+
+/***** FOOTER *****/
+
+footer {
+   background-image: url(../img/hero-pastel.jpg);
+   background-position: center;
+   background-size: cover;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+footer .container {
+   display: flex;
+   width: 500px;
+   margin: 0 auto;
+   justify-content: space-around;
+   padding-block-start: 6rem;
+   padding-block-end: 5rem;
+   color: white;
+}
+
+footer .container .hours {
+   display: flex;
+   flex-direction: column;
+   row-gap: 20px;
+}
+
+footer iframe{
+   width: 150px;
+   height: 150px;
+}
+footer h3{
+   font-weight: bold;
+   letter-spacing: 1px;
+}
+
+footer nav ul{
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   justify-content: center;
+   background-color: #a9c7c5ad;
+   padding-block: 10px; 
+}
+
+footer nav ul li{
+   padding-inline: 3rem;
+}
+
+footer a {
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+   line-height: 150%;
+   letter-spacing: 1px;
+   font-size: 15px;
+}
+
+footer a:hover {
+   color: #FADCE4;
+   transition: all 0.5s;
+}
+
+footer h3 {
+   font-size: 1.5em;
+   margin-block-end: 0.5em;
+}
+
+footer .hours .call{
+   color: #4c91a6;
+}
+
+footer .hours th {
+   font-weight: bold;
+   text-align: right;
+   padding-inline-end: 10px;
+}
+
+.container .hours table{
+   color:#4c91a6;
+}
+
+.container .hours a{
+   color:#4c91a6;
+}
+
+.container .hours a i{
+   font-size: 30px;
+   padding-inline-end: 10px;
+   color: white;
+}
+
+/***** MEDIA QUERY *****/
+
+@media (max-width:1100px){
+
+   /***** COFFEE OFFER *****/
+   main .coffee-offer{
+      display: grid;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      grid-template-rows: repeat(1, minmax(0, 1fr));
+      height: 800px;
+   }
+
+   main .coffee-offer .grid-item2{
+      margin: 0 auto;
+      width: 100%;
+      height: 320px;
+   }
+
+   main .coffee-offer .grid-item2 div{
+      width: 95vw;
+      margin: 0 auto;
+   }
+
+} 
+
+
+@media (max-width: 1012px){
+
+   /***** PODNIK GRO *****/
+   main .priority {
+      flex-direction: column;
+      width: min-content;
+   }
+
+   main .priority p {
+      width: 70vw;
+   }
+
+   main .priority a {
+      margin-block-start: 10px;
+      align-self: end;
+   }
+
+   /***** COFFEE OFFER *****/
+   .container-offer{
+      display: flex;
+      flex-direction: column;
+      height: max-content;
+   }
+
+   /***** CAKE INFO / VOUCHER *****/
+   .container-offer .grid-item1{
+      padding-inline: 0;
+   }
+
+   .container-offer .grid-item1 p{
+      width: 70vw;
+      margin: 0 auto;
+   }
+}
+
+
+
+@media (max-width:900px){
+
+   /***** CAKE OFFER / PRIZES *****/
+   main .cake-offer{
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      grid-template-rows: repeat(1, minmax(0, 1fr));
+      height: max-content;
+   }
+
+   main .cake-offer .grid-item1{
+      margin: 0 auto;
+      height: 300px;
+      width: 100%;
+   }
+  
+   /***** LIMO OFFER / PRIZES *****/
+   main .limo-offer{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+   }
+}
+
+@media (max-width: 700px){
+ 
+   /***** HEADER / NAVIGATION *****/
+   header menu .logo .social .menu-icon{
+      display: inline-block;
+        z-index: 999;
+   }
+
+   nav.navbar.active {
+      display: block;
+  }
+
+  header .navbar{
+   display: none;
+  }
+
+  .container .navbar{
+   display: none;
+  }
+
+  .fb-ig{
+   margin-inline-end: 4rem;
+}
+
+   header .container {
+      width: 100%;
+      flex-direction: column;
+   }
+
+   header nav ul {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   header nav {
+      justify-content: center;
+   }
+
+   header nav ul li {
+      padding-block: 20px;
+   }
+
+   header nav ul li a {
+      line-height: 30px;
+   }
+
+   header .container nav ul .raspberry{ 
+      margin-block-start: 0rem;
+   } 
+
+   /***** FOOTER *****/
+   header .container .logo a {
+      display: flex;
+      justify-content: center;
+      margin-block: 20px;
+   }
+
+   footer nav ul > .call{
+      flex-wrap: wrap;
+   }
+
+   footer .container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+   }
+   
+   footer nav ul{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+  footer .container .hours{
+   padding-block: 20px;
+  }
+
+  footer .container .kontakt{
+   padding-block: 20px;
+  }
+
+  footer .container .call{
+   padding-block: 20px;
+  }
+
+  footer nav ul li{
+   padding-block: 10px;
+  }
+}
+
+@media (max-width: 500px){
+
+   /***** CAKE OFFER / PRIZES *****/
+   main div#cake-prizes.cake-offer .grid-item1 div table{
+      width: 85vw;
+      margin: 0 auto;
+   }
+
+   main .coffee-offer .grid-item2 article{
+      width: 100%;
+  }
+
+  main .coffee-offer .grid-item2 h2{
+   font-size: 45px;
+  }
+
+  main .coffee-offer .grid-item2 article a img{
+   margin-inline-end: 3vw ;
+}
+
+main .coffee-offer .grid-item2 article a{
+   padding-inline-end: 20px;
+}
+
+/***** LIMO OFFER / PRIZES *****/
+.limo-offer .grid-item2#limo h2{
+font-size: 45px;
+}
+}
+

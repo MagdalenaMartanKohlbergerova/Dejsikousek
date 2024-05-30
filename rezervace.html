@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dejsikousek | Rezervace</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/rezervace.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <menu>
+            <div class="logo">
+                <a href="">
+                    <h3>Dejsikousek</h3>
+                </a>
+                <div class="social">
+                    <a href="https://www.facebook.com/dejsikousek/?locale=cs_CZ" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/dejsikousek/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Domů</a></li>
+                        <li><a href="nabidka.html">Nabídka</a></li>
+                        <div class="cake"><img
+                                src="./img/Dortiky1.jpg" loading="lazy"
+                                alt=""></div>
+                        <li><a href="#">Rezervace</a></li>
+                        <li><a href="#contact-offer">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </menu>
+
+        <section class="rezervace">
+            <div class="box">
+                <div class="rez-info">
+                    <article>
+                        <h2>- Rezervace -</h2>
+                        <p>Pokud si chcete zajistit místo, neváhejte si rezervovat stůl přes náš formulář. Uvádějte také časy od - do.</p>
+                    </article>
+                </div>
+
+                <div class="form">
+                    <form action="mailer.php" method="post">
+                        <div class="message">
+                            <input type="text" name="name" placeholder="Jméno a příjmení" class="fullName">
+                            <input type="Email" name="email" placeholder="@" class="userEmail">
+                            <textarea name="message" cols="30" rows="5"></textarea>
+                            <input class="submit" type="submit" value="poslat">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <div class="rez-photogallery">
+            <div class="gallery">
+                <div>
+                    <img src="img/tartaletky.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/wedding8.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/latte3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container" id="contact-offer">
+            <div class="hours">
+                <table>
+                    <tr>
+                        <th>Út - Pá:</th>
+                        <td>9h - 18h</td>
+                    </tr>
+                    <tr>
+                        <th>So:</th>
+                        <td>9h - 17h</td>
+                    </tr>
+                    <tr>
+                        <th>Ne - Po:</th>
+                        <td>Zavřeno</td>
+                    </tr>
+                </table>
+                <div class="social">
+                    <a href="https://www.facebook.com/dejsikousek/?locale=cs_CZ" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/dejsikousek/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="tel:+420 777 777 777" class="call">+420 777 777 777</a>
+            </div>
+
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.6731430969007!2d13.90461447587617!3d49.26364087210319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b371fb43b9c49%3A0xbf3be2ab05d15ce9!2sDejsikousek%20s.r.o.!5e0!3m2!1scs!2scz!4v1711400875803!5m2!1scs!2scz"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">domů</a></li>
+                <li><a href="nabidka.html">nabídka</a></li>
+                <li><a href="rezervace.html">rezervace</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial;
+    background-color: #f7f5eb;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Kaushan Script';
+}
+
+/***** HEADER *****/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    height: 600px;
+    row-gap: 10px;
+    column-gap: 10px;
+    text-align: center;
+}
+
+menu {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-position: center;
+    background-size: cover;
+}
+
+header menu .logo {
+    display: flex;
+    background-color: #C9C3DE;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 30px;
+}
+
+header menu .logo a {
+    text-decoration: none;
+    color: white;
+}
+
+header menu .logo a .fa-phone {
+    padding-inline-start: 30px;
+    font-size: 25px;
+}
+
+header menu .logo h3 {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-block: 20px;
+}
+
+header menu .logo a i {
+    font-size: 25px;
+    color: white;
+    padding-inline: 5px;
+}
+
+header menu .logo a i.fa-facebook:hover {
+    color: #FADCE4;
+    transition: all 0.5s;
+}
+
+header menu .logo a i.fa-instagram:hover {
+    color: #adece9;
+    transition: all 0.5s;
+}
+
+/***** NAVIGATION *****/
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    background-color: #c9c3de82;
+}
+
+header .container nav {
+    display: flex;
+    align-items: center;
+}
+
+header .container nav ul {
+    list-style: none;
+    display: flex;
+    column-gap: 20px;
+}
+
+header .container nav ul .cake {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    margin-block-start: -3rem;
+    border: 2px solid white;
+}
+
+header .container nav ul .cake img {
+    width: 100%;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    transition: all 2s;
+}
+
+header .container nav ul .cake img:hover {
+    transform: rotate(90deg);
+    transition: all 1.2s;
+}
+
+header .container nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-inline: 30px;
+    line-height: 45px;
+    text-transform: lowercase;
+    transition: all 0.5s;
+}
+
+header .container nav ul li a:hover {
+    color: #C9C3DE;
+    transition: all 0.5s;
+}
+
+/***** RESERVATION FORM *****/
+
+.rezervace .box {
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 9vw;
+    column-gap: 1rem;
+}
+
+.rezervace .box .rez-info article h2 {
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin-block-end: 20px;
+    color: #745E96;
+}
+
+.rezervace .box .rez-info article p {
+    line-height: 150%;
+    color: black;
+    padding-block-end: 1rem;
+}
+
+.rezervace .box .form {
+    width: 70%;
+    margin-block-start: 3rem;
+}
+
+.rezervace .box .form form .message {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    row-gap: 10px;
+    width: 80%;
+}
+
+.rezervace .box .form form input::placeholder {
+    color: #745E96;
+    font-size: 15px;
+}
+
+.rezervace .box .form form .message input {
+    outline: none;
+    border: none;
+    height: 2rem;
+    color: #745E96;
+    padding-inline-start: 1rem;
+    font-size: 15px;
+}
+
+.rezervace .box .form form .message textarea {
+    outline: none;
+    border: none;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+    color: #745E96;
+    padding-block-start: 1rem;
+    font-size: 15px;
+}
+
+.rezervace .box .form form .message input.submit {
+    background-color: #C9C3DE;
+    color: white;
+    font-weight: bold;
+    padding-inline: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.5s;
+    width: 15vw;
+    height: 50px;
+    display: inline-block;
+    justify-content: center;
+    text-transform: uppercase;
+    align-items: center;
+    margin-block-start: 1rem;
+}
+
+.rezervace .box .form form .message input.submit:hover {
+    color: #C9C3DE;
+    letter-spacing: 1px;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+/***** PHOTOGALLERY *****/
+
+main .rez-photogallery .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+    height: 350px;
+    column-gap: 5px;
+}
+
+main .rez-photogallery .gallery div {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main .rez-photogallery .gallery div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/***** FOOTER *****/
+
+footer {
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .container {
+    display: flex;
+    width: 500px;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding-block-start: 6rem;
+    padding-block-end: 5rem;
+}
+
+footer .container .hours {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+footer iframe {
+    width: 150px;
+    height: 150px;
+}
+
+footer h3 {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+footer nav ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    background-color: #c9c3de82;
+    padding-block: 10px;
+}
+
+footer nav ul li {
+    padding-inline: 3rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 150%;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+footer a:hover {
+    color: #C9C3DE;
+    transition: all 0.5s;
+}
+
+footer h3 {
+    font-size: 1.5em;
+    margin-block-end: 0.5em;
+}
+
+footer .hours .call {
+    color: #745E96;
+}
+
+footer .hours th {
+    font-weight: bold;
+    text-align: right;
+    padding-inline-end: 10px;
+}
+
+.container .hours table {
+    color: #745E96;
+}
+
+.container .hours a {
+    color: #745E96;
+}
+
+.container .hours a i {
+    font-size: 30px;
+    padding-inline-end: 10px;
+    color: #C9C3DE;
+
+}
+
+/***** MEDIA QUERIES *****/
+
+@media (max-width: 1000px) {
+
+    /***** REZERVATION FORM *****/
+    .rezervace .box {
+        height: 700px;
+        flex-direction: column;
+    }
+
+    .rezervace .box .rez-info {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .rezervace .box .rez-info article {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .rezervace .box .form {
+        width: 100%;
+    }
+
+    .rezervace .box .form form .message input.submit {
+        width: 150px;
+    }
+
+    /***** PHOTOGALLERY *****/
+    main .rez-photogallery .gallery {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        grid-template-rows: repeat(3, minmax(0, 1fr));
+        height: 850px;
+        row-gap: 5px;
+    }
+}
+
+
+
+@media (max-width:800px) {
+
+    /***** FOOTER *****/
+    footer nav ul>.call {
+        flex-wrap: wrap;
+    }
+
+    footer .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    footer nav ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .container .hours {
+        padding-block: 20px;
+    }
+
+    footer .container .kontakt {
+        padding-block: 20px;
+    }
+
+    footer .container .call {
+        padding-block: 20px;
+    }
+
+    footer nav ul li {
+        padding-block: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    /***** HEADER *****/
+    header {
+        height: 1100px;
+    }
+    
+    /***** NAVIGATION *****/
+    header .container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        justify-content: center;
+    }
+
+    header nav ul li {
+        padding-block: 20px;
+    }
+
+    header nav ul li a {
+        line-height: 30px;
+    }
+
+    header .container nav ul .cake {
+        margin-block-start: 0rem;
+    }
+
+    header .container .logo a {
+        display: flex;
+        justify-content: center;
+        margin-block: 20px;
+    }
+
+    /***** PHOTOGALLERY *****/
+    main .rez-photogallery .gallery {
+        padding-block-start: 6rem;
+        height: 1000px;
+    }
+
+}
