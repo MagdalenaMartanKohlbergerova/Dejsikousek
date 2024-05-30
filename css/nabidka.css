@@ -390,6 +390,7 @@ button.close-button{
    text-align: center;
    border: 0;
    cursor: pointer;
+   outline: none;
 }
 
 button.close-button:hover{
