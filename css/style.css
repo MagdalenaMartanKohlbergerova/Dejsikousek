@@ -74,6 +74,18 @@ header menu .logo a i.fa-instagram:hover {
    transition: all 0.5s;
 }
 
+header menu .logo .menu-icon{
+   position: absolute;
+   /* display: flex; */
+   top: 1.3rem;
+    right: 1.5rem;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+    padding-inline-start: 3rem;
+}
+
 /****** NAVIGATION ******/
 
 header .container {
@@ -711,6 +723,26 @@ footer .hours th {
       flex-direction: column;
    }
 
+   header menu .logo .menu-icon{
+       display: block;
+   }
+
+   header menu .logo .social{
+      padding-inline-end: 3rem;
+   }
+
+   nav.navbar.active {
+      display: block;
+  }
+
+  header .navbar{
+   display: none;
+  }
+
+  .container .navbar{
+   display: none;
+  }
+
    header nav ul {
       flex-direction: column;
       align-items: center;
@@ -784,11 +816,12 @@ footer .hours th {
     main section .coffee-container {
       grid-template-columns: repeat(1, minmax(0, 1fr));
       grid-template-rows: repeat(2, minmax(0, 1fr));
+      height: 500px;
       /* row-gap: 20rem; */
    }
 
    main section .coffee-container .right {
-      height: 380px;
+      height: 400px;
       /* background-size: cover; */
       background-repeat: no-repeat;
    }

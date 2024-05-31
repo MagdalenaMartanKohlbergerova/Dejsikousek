@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 
 <body>
@@ -22,19 +23,19 @@
                             class="fa-brands fa-facebook"></i></a>
                     <a href="https://www.instagram.com/dejsikousek/" target="_blank"><i
                             class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
-                        
-                    <i class="fa-solid fa-bars menu-icon" id="menu-bar"></i>
                 </div>
+
+                <i class="fa-solid fa-bars menu-icon" id="menu-bar"></i>
+
             </div>
 
             <div class="container">
-                <nav>
+                <nav class="navbar">
                     <ul>
                         <li><a href="#home">Domů</a></li>
                         <li><a href="nabidka.html">nabídka</a></li>
                         <div class="blueberry"><img src="./img/blueberries-1326154_640.jpg" alt=""></div>
-                        <li><a href="rezervace.html">Rezervace</a></li>
+                        <li><a href="nabidka.html#cake-info">Ceník</a></li>
                         <li><a href="#contact">Kontakt</a></li>
                     </ul>
                 </nav>
@@ -83,7 +84,7 @@
             <div class="container-offer" id="info">
                 <div class="grid-item1 card1">
                     <p>Objednávky na dorty přijímáme osobně na prodejně nebo
-                        telefonicky. Pro podrobnějsí informace <a href="#">čtěte zde<span></span></a></p>
+                        telefonicky. Pro podrobnějsí informace <a href="nabidka.html#cake-info">čtěte zde<span></span></a></p>
                 </div>
                 <div class="grid-item2">
                 </div>
@@ -154,11 +155,17 @@
                 <ul>
                     <li><a href="#">domů</a></li>
                     <li><a href="nabidka.html">nabídka</a></li>
-                    <li><a href="rezervace.html">rezervace</a></li>
+                    <li><a href="nabidka.html#cake-info">ceník</a></li>
                 </ul>
             </nav>
         </footer>
 
+        <script>
+            let navbar = document.querySelector('.navbar');
+            document.querySelector('#menu-bar').onclick = () => {
+            navbar.classList.toggle('active')
+            }
+        </script>
 </body>
 
 </html>

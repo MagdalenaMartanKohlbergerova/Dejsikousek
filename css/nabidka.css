@@ -38,11 +38,6 @@ header menu .logo a {
    color: white;
 }
 
-header menu .logo a .fa-phone {
-   padding-inline-start: 30px;
-   font-size: 25px;
-}
-
 header menu .logo h3 {
    font-size: 25px;
    font-weight: bold;
