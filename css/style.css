@@ -189,12 +189,12 @@ main .container-about .about-title {
    }
 
 .reveal {
-   transform: translateX(-400px);
+   /* transform: translateX(-400px); */
    opacity: 0;
    transition: all 1.5s linear;
    }
    .reveal.active {
-   transform: translateX(0px);
+   /* transform: translateX(0px); */
    opacity: 1;
    }
 

@@ -175,6 +175,26 @@ main .priority a:hover {
    color: white;
 }
 
+.reveal-fast {
+   transform: translateX(-400px);
+   opacity: 0;
+   transition: all 1s linear;
+   }
+   .reveal-fast.active {
+   transform: translateX(0px);
+   opacity: 1;
+   }
+
+.reveal {
+   /* transform: translateX(-400px); */
+   opacity: 0;
+   transition: all 1.5s linear;
+   }
+   .reveal.active {
+   /* transform: translateX(0px); */
+   opacity: 1;
+   }
+
 /****** CAKE INFO / VOUCHER ******/
 
 .cake-line{
@@ -188,7 +208,7 @@ main .priority a:hover {
    display: grid;
    grid-template-columns: repeat(3, minmax(0, 1fr));
    grid-template-rows: repeat(1, minmax(0, 1fr));
-   height: 300px;
+   height: 400px;
    column-gap: 5px;
    padding-block: 5px;
 }
@@ -204,6 +224,11 @@ main .priority a:hover {
    line-height: 150%;
    color: black;
    padding-block-end: 1rem;
+}
+
+.container-offer .grid-item1 p .shop{
+   text-decoration: none;
+   color: #f9a4bb;
 }
 
 .container-offer .grid-item2{
@@ -301,12 +326,17 @@ dialog .modal table tbody tr th{
    font-weight: bold;
 }
 
+dialog .modal table tbody tr{
+   outline: none;
+}
+
 dialog#modal.modal table tbody tr th{
    padding-block: 4px;
    /* padding-inline-start: 1rem; */
    padding-inline-end:30px ;
    cursor: pointer;
    font-weight: bold;
+   outline: none;
 }
 
 dialog#modal.modal table tbody tr th.wedding-cakes{

@@ -19,6 +19,37 @@ document.querySelector('#menu-bar').onclick=() =>{
     navbar.classList.toggle('active')
 }
 
+window.addEventListener("scroll", function(){
+    let reveals =
+    document.querySelectorAll(".reveal")
+    reveals.forEach(function(oneBlok){
+    let windowHeight = window.innerHeight
+    let revealTop = oneBlok.getBoundingClientRect().top
+    let revelPoint = 100
+    if (revealTop < windowHeight - revelPoint){
+    19
+    oneBlok.classList.add("active")
+    } else {
+    oneBlok.classList.remove("active")
+    }
+    })
+    });
+
+    window.addEventListener("scroll", function(){
+        let revealsFast =
+        document.querySelectorAll(".reveal-fast")
+        revealsFast.forEach(function(oneBlok){
+        let windowHeight = window.innerHeight
+        let revealTop = oneBlok.getBoundingClientRect().top
+        let revelPoint = 100
+        if (revealTop < windowHeight - revelPoint){
+        19
+        oneBlok.classList.add("active")
+        } else {
+        oneBlok.classList.remove("active")
+        }
+        })
+    });
     
 
 
