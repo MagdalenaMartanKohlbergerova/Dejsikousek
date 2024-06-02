@@ -15,6 +15,7 @@ h4,
 h5,
 h6 {
    font-family: 'Kaushan Script';
+   font-weight: lighter;
 }
 
 /****** NAVIGATION ******/
@@ -214,7 +215,7 @@ main .priority a:hover {
 .container-offer .callme a{
    font-weight: bold;
    color: #f9a4bb;
-   padding-inline: 6px;
+   /* padding-inline: 6px; */
    text-decoration: none;
 }
 
@@ -336,6 +337,7 @@ button.open-button{
    border: none;
    cursor: pointer;
    font-weight: bold;
+   padding-inline: 0;
 }
 
 button.open-button:before,
@@ -365,8 +367,9 @@ button.open-button:hover:after {
 .button.open-button span {
 	position: absolute;
 	display: block;
-	width: 60px;
-	height: 100%;
+	/* width: 60px; */
+	/* height: 100%; */
+   padding: 0;
 	right: -30%;
 	top: 0;
 }
@@ -453,10 +456,13 @@ main .coffee-offer a img{
    color: #f9a4bb;
 }
 
-/* .coffee-article article a{
-   padding-block-start: 1rem;
-   width: 400px;
-} */
+.coffee-article article p a{
+   /* padding-block-start: 1rem; */
+   /* width: 400px; */
+   font-weight: bold;
+   text-decoration: none;
+   color: black;
+}
 
 .coffee-article article img{
    padding-block-start: 1rem;

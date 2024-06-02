@@ -15,6 +15,7 @@ h4,
 h5,
 h6 {
    font-family: 'Kaushan Script';
+   font-weight: lighter;
 }
 
 /****** HEADER ******/
@@ -86,6 +87,7 @@ header menu .logo .menu-icon{
     padding-inline-start: 3rem;
 }
 
+
 /****** NAVIGATION ******/
 
 header .container {
@@ -138,7 +140,7 @@ header .container nav ul li a {
 }
 
 header .container nav ul li a:hover {
-   color: #FADCE4;
+   color: #4c91a6;
    transition: all 0.5s;
 }
 
@@ -175,6 +177,26 @@ main .container-about .about-title {
    font-size: 40px;
    color: #82A3AC;
 }
+
+.reveal-fast {
+   transform: translateX(-400px);
+   opacity: 0;
+   transition: all 1s linear;
+   }
+   .reveal-fast.active {
+   transform: translateX(0px);
+   opacity: 1;
+   }
+
+.reveal {
+   transform: translateX(-400px);
+   opacity: 0;
+   transition: all 1.5s linear;
+   }
+   .reveal.active {
+   transform: translateX(0px);
+   opacity: 1;
+   }
 
 main .container-about p {
    line-height: 24px;
@@ -315,13 +337,12 @@ main .container-about a:hover {
 	position: relative;
 	color: #50DF8F;
 	text-decoration: none;
-	font-size: 1.2em;
+   font-weight: bold;
+	font-size: 1em;
    /* display: flex; */
    max-width: 150px;
    align-content: end;
    justify-content: right;
-   margin-inline-start: 1rem;
-
 }
 
 .card1 a:before,
@@ -715,7 +736,7 @@ footer .hours th {
 
    /****** HEADER ******/
    header {
-      height: 1100px;
+      /* height: 1100px; */
    }
 
    header .container {
@@ -733,6 +754,12 @@ footer .hours th {
 
    nav.navbar.active {
       display: block;
+      z-index: 1;
+      position: absolute;
+      top: 65px;
+      right: 0;
+      left: 0;
+      background-color: #cae1df;
   }
 
   header .navbar{
@@ -790,6 +817,7 @@ footer .hours th {
    /****** MAIN - ABOUT ******/
    main .container-about a {
       width: 25vw;
+      margin-block-start: 2rem;
    }
 
    /****** CAKE OFFER PHOTOGALLERY ******/
@@ -803,7 +831,7 @@ footer .hours th {
       grid-template-rows: repeat(2, minmax(0, 1fr));
       padding-block: 5px;
       column-gap: 0;
-      height: 400px;
+      height: 500px;
    }
 
    .container-offer .grid-item1 {
@@ -818,19 +846,31 @@ footer .hours th {
       grid-template-rows: repeat(2, minmax(0, 1fr));
       height: 500px;
       /* row-gap: 20rem; */
+      position: relative;
    }
 
    main section .coffee-container .right {
-      height: 400px;
-      /* background-size: cover; */
+      /* height: 400px; */
+      background-size: cover;
       background-repeat: no-repeat;
+      background-position: center;
+      grid-column: 1/2;
+      grid-row: 1/4;
    }
 
    main section .coffee-container .left {
       grid-column: 1/2;
-      grid-row: 2/3;
+      grid-row: 2/4;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
       height: 180px;
       background-color: #d2ab8293;
+   }
+
+   main section .coffee-container .right {
+
    }
 
    main .coffee-container .left article {
@@ -860,7 +900,7 @@ footer .hours th {
 
    /****** HEADER ******/
    header {
-      height: 1000px;
+      /* height: 800px; */
    }
 
    /****** CAKE OFFER INFO ******/

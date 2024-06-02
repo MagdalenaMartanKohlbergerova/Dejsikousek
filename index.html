@@ -15,7 +15,7 @@
     <header>
         <menu>
             <div class="logo">
-                <a href="">
+                <a href="" class="hide-head">
                     <h3>Dejsikousek</h3>
                 </a>
                 <div class="social">
@@ -51,10 +51,10 @@
         <section>
             <div class="container-about" id="home">
                 <div>
-                    <h4 class="about-title">- Cukrárno kavárna-</h4>
-                    <p>Protože nejlepší sport je Kafe a Dort ...</p>
-                    <p>Naše barevná nabídka je plná karamelu, čokolády a čerstvého ovoce. Můžete si pochutnat na dortu
-                        větrníkovém, přes jahodový cheesecake až po oblíbené dorty Pavlova. </p>
+                    <h4 class="about-title reveal-fast">- Cukrárno kavárna-</h4>
+                    <p class="reveal">Protože nejlepší sport je <strong>Kafe a Dort</strong> ...</p>
+                    <p class="reveal">Naše barevná nabídka je plná karamelu, čokolády a čerstvého ovoce. Můžete si pochutnat na dortu
+                        <b>větrníkovém, přes jahodový cheesecake</b> až po oblíbené dorty <b>Pavlova</b>. </p>
                 </div>
                 <a href="#info">Objednat</a>
             </div>
@@ -82,9 +82,9 @@
             </div>
 
             <div class="container-offer" id="info">
-                <div class="grid-item1 card1">
-                    <p>Objednávky na dorty přijímáme osobně na prodejně nebo
-                        telefonicky. Pro podrobnějsí informace <a href="nabidka.html#cake-info">čtěte zde<span></span></a></p>
+                <div class="grid-item1 card1 reveal">
+                    <p>Objednávky na dorty přijímáme <b>osobně na prodejně nebo
+                        telefonicky.</b> Pro podrobnější informace o objednávkách a cenách <br><a href="nabidka.html#cake-info">čtěte&nbsp;zde<span></span></a></p>
                 </div>
                 <div class="grid-item2">
                 </div>
@@ -106,8 +106,8 @@
 
             <div class="container-about">
                 <div>
-                    <h4 class="about-title">- Domácí limonády -</h4>
-                    <p>Každá limonáda je výrazem naší lásky k poctivým ingrediencím a čerstvé chuti. Pravidelně
+                    <h4 class="about-title reveal-fast">- Domácí limonády -</h4>
+                    <p class="reveal">Každá limonáda je výrazem naší lásky k <b>poctivým ingrediencím a čerstvé chuti</b>. Pravidelně
                         obměňujeme nabídku, abyste měli vždy něco nového k objevování.</p>
                 </div>
                 <br>
@@ -165,6 +165,38 @@
             document.querySelector('#menu-bar').onclick = () => {
             navbar.classList.toggle('active')
             }
+
+            window.addEventListener("scroll", function(){
+    let reveals =
+    document.querySelectorAll(".reveal")
+    reveals.forEach(function(oneBlok){
+    let windowHeight = window.innerHeight
+    let revealTop = oneBlok.getBoundingClientRect().top
+    let revelPoint = 100
+    if (revealTop < windowHeight - revelPoint){
+    19
+    oneBlok.classList.add("active")
+    } else {
+    oneBlok.classList.remove("active")
+    }
+    })
+    })
+
+    window.addEventListener("scroll", function(){
+    let revealsFast =
+    document.querySelectorAll(".reveal-fast")
+    revealsFast.forEach(function(oneBlok){
+    let windowHeight = window.innerHeight
+    let revealTop = oneBlok.getBoundingClientRect().top
+    let revelPoint = 100
+    if (revealTop < windowHeight - revelPoint){
+    19
+    oneBlok.classList.add("active")
+    } else {
+    oneBlok.classList.remove("active")
+    }
+    })
+})
         </script>
 </body>
 
